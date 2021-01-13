@@ -8,13 +8,13 @@ const config = {
   description: `This is my blog`,     // Site description
   maxWidth: "768px",                  // Max width of website
   enableAbout: true,                  // Enables about page
-  siteUrl: `https://yourDomain.com/`, // For sitemap & RSS feed
+  siteUrl: `https://charliestrawn.com/`, // For sitemap & RSS feed
   useScrollIndicator: true,           // Use scroll indicator on top of screen in posts
 
   /* Profile
   ========================================= */
-  author: `Author Name`,                             // Name shows on profile
-  profileDescription: "{Edit me in customize.js}",   // Shows under author name
+  author: `Charlie Strawn`,                             // Name shows on profile
+  profileDescription: "Sr. Software Engineer",   // Shows under author name
   profileImageName: `profile.jpeg`,                  // Place profile.jpg/.jpeg/.png in _assets folder
   location: "",                                      // Location under profileDescription. "" --> disabled
   footerLink: "",                                    // Link to page when you click footer name
@@ -25,17 +25,17 @@ const config = {
   ========================================= */
   socialMediaLinks: {
     email:     { emailAddress: "", showHeaderIcon: true },
-    github:    { accountName: "", showHeaderIcon: true },
+    github:    { accountName: "charliestrawn", showHeaderIcon: true },
     facebook:  { accountName: "", showHeaderIcon: true },
     instagram: { accountName: "", showHeaderIcon: true },
-    twitter:   { accountName: "", showHeaderIcon: true },
+    twitter:   { accountName: "charliestrawn", showHeaderIcon: true },
     linkedIn:  { accountName: "", showHeaderIcon: true },   // Use URL after "linkedin.com/"
     medium:    { accountName: "", showHeaderIcon: true },   // Use URL after "medium.com/@"
   },
 
   /* Social Media Share Buttons--available below every post
   ========================================= */
-  shareButtons: { email: false, facebook: true, twitter: true, reddit: false, linkedIn: false },
+  shareButtons: { email: false, facebook: false, twitter: true, reddit: false, linkedIn: true },
 
   /* Comments
   ========================================= */
@@ -47,11 +47,11 @@ const config = {
 
   /* More Custom Settings
   ========================================= */
-  defaultTheme: "light",                      // Options: dark / light -- applied to first visitors
+  defaultTheme: "dark",                      // Options: dark / light -- applied to first visitors
   showTimeToRead: false,                      // Shows time to read for each post in main page
   breakCodeLines: false,                      // Breaks long code lines instead of having horizontal scroll
   faviconSrc: `_assets/icon-code.png`,        // Favicon
-  gaTrackingId: ``,                           // Your google analytics tracking id--i.e. UA-*****
+  gaTrackingId: `G-5GZ3LT0MM3`,                           // Your google analytics tracking id--i.e. UA-*****
   googleAdSenseId: ``,                        // Your google AdSense client id--i.e. ca-pub-****
 }
 
