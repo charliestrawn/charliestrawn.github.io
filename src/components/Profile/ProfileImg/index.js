@@ -35,7 +35,7 @@ const ProfileImage = ({ home }) => {
 
 export default ProfileImage
 
-const profileImageSize = "80px"
+const profileImageSize = "200px"
 
 const StyledImage = styled.div`
   position: relative;
