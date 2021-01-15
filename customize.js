@@ -4,7 +4,7 @@
 const config = {
   /* Site
   ========================================= */
-  title: `gatsby-blog-mdx`,          // Displayed in header
+  title: `charliestrawn`,          // Displayed in header
   description: `This is my blog`,     // Site description
   maxWidth: "768px",                  // Max width of website
   enableAbout: true,                  // Enables about page
@@ -40,7 +40,7 @@ const config = {
   /* Comments
   ========================================= */
   comments: {
-    facebook: { enabled: true, appId: "" },      // appId: optional, but used to moderate fb comments
+    facebook: { enabled: false, appId: "" },      // appId: optional, but used to moderate fb comments
     disqus: { enabled: false, shortName: "" },   // Check your shortName on https://disqus.com
     utterances: { enabled: false, repoUrl: "" }, // i.e. 'ellismin/gatsby-blog-mdx'
   },
@@ -51,7 +51,7 @@ const config = {
   showTimeToRead: false,                      // Shows time to read for each post in main page
   breakCodeLines: false,                      // Breaks long code lines instead of having horizontal scroll
   faviconSrc: `_assets/icon-code.png`,        // Favicon
-  gaTrackingId: `G-5GZ3LT0MM3`,                           // Your google analytics tracking id--i.e. UA-*****
+  gaTrackingId: `G-5GZ3LT0MM3`,               // Your google analytics tracking id--i.e. UA-*****
   googleAdSenseId: ``,                        // Your google AdSense client id--i.e. ca-pub-****
 }
 
