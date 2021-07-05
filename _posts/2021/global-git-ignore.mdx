@@ -1,0 +1,34 @@
+---
+title: Global gitignore
+date: 2021-07-05
+tags: [git]
+excerpt: Git tips and tricks
+---
+
+Have you ever accidentally committed a .DS_Store file? or started at a new company and opened up a PR adding `.vscode`
+or `.idea` folders to a repo's `.gitignore`? Keep those pesky user specific config files out of your repo easily by
+creating a global gitignore file.
+
+```gitignore:title=.gitignore
+.DS_Store
+.idea
+.vscoe
+```
+
+Save this file off somewhere; I would recommend ~/.gitignore or maybe in your dotfiles repo, and then either run:
+
+```shell
+$ git config --global core.excludesFile /path/to/globalgitignore
+```
+
+or to your gitconfig
+
+```ini:.gitconfig
+[core]
+    excludesfile = /path/to/globalgitignore
+```
+
+This does not replace the need for a repo's gitignore. I would still recommend keeping output and artifacts of your
+code bases in repo-specific ignore files to 1. keep the context of things that a repo produces that we don't want to
+version and 2. avoid every dev having to update their global gitignore.
+
